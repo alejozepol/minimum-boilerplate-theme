@@ -1,10 +1,4 @@
 {
-  "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
@@ -13,23 +7,22 @@
       "sticky-layout#4-desktop"
     ]
   },
-
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],
     "props": {
       "fullWidth": true
     }
   },
-
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": ["image#bar-desk"],
     "props": {
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "image#bar-desk": {
     "props": {
-      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/badd682d-bf1f-479e-9625-92d3c38968ec___ba2aa061a945038cfd5221735cc9c566.jpg",
+      "alt": "Imagen promocional"
     }
   },
   "flex-layout.row#3-desktop": {
@@ -92,52 +85,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png",
       "width": "180"
-    }
-  },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
-  },
-  "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
-  },
-  "flex-layout.row#1-mobile": {
-    "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
-  },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "70"
     }
   }
 }

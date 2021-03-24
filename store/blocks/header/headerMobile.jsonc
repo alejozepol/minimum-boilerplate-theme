@@ -1,0 +1,44 @@
+{
+  "header-layout.mobile": {
+    "children": ["flex-layout.row#mobile-bar", "sticky-layout#1-mobile"]
+  },
+  "flex-layout.row#mobile-bar": {
+    "children": ["image#bar-mobile"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "image#bar-mobile": {
+    "props": {
+      "src": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/13b10a46-132d-4223-aad7-e0c118e7783f___12041369180340c1ecd2c94cb33658ef.jpg",
+      "alt": "Imagen promocional"
+    }
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "inverted": true
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/efdb19bd-0e3c-4f95-a805-ebbecacebd0b___0aeaf3d65cbbd37505704c762c5e9b4f.svg",
+      "width": "70"
+    }
+  }
+}

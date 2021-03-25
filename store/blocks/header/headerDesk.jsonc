@@ -2,18 +2,10 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
+      "sticky-layout#2-desktop"
     ]
   },
   "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
-    "props": {
-      "fullWidth": true
-    }
-  },
-  "flex-layout.row#2-desktop": {
     "children": ["image#bar-desk"],
     "props": {
       "fullWidth": "true"
@@ -25,34 +17,15 @@
       "alt": "Imagen promocional"
     }
   },
-  "flex-layout.row#3-desktop": {
+  "sticky-layout#2-desktop": {
     "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "blockClass": "container-nav-desk"
     },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
+    "children": ["flex-layout.row#2-desktop"]
   },
-  "flex-layout.col#spacer": {
+  "flex-layout.row#2-desktop": {
     "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
+      "blockClass": "nav-desk",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -61,13 +34,18 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
+     /*  "flex-layout.col#category-menu", */
+  /*     "flex-layout.col#spacer", */
       "search-bar",
-      "locale-switcher",
+/*       "locale-switcher", */
       "login",
       "minicart.v2"
     ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {

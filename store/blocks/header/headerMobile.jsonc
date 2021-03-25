@@ -1,11 +1,12 @@
 {
   "header-layout.mobile": {
-    "children": ["flex-layout.row#mobile-bar", "sticky-layout#1-mobile"]
+    "children": ["flex-layout.row#mobile-bar", "flex-layout.row#nav-mobile"]
   },
   "flex-layout.row#mobile-bar": {
     "children": ["image#bar-mobile"],
     "props": {
-      "fullWidth": "true"
+      "fullWidth": "true",
+      "blockClass": "containerImage"
     }
   },
   "image#bar-mobile": {
@@ -14,31 +15,36 @@
       "alt": "Imagen promocional"
     }
   },
-  "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
-  },
-  "flex-layout.row#1-mobile": {
-    "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
+  "flex-layout.row#nav-mobile": {
+    "children": ["flex-layout.col#left", "flex-layout.col#right"],
     "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
+      "blockClass": "nav-mobile",
+      "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true,
-      "inverted": true
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#left": {
+    "children": ["logo#mobile"],
+    "props": {
+      "blockClass": ["nav-mobile-children", "nav-mobile-left"]
+     /*  "horizontalAlign":"center" */
+      
     }
   },
   "logo#mobile": {
     "props": {
+      "blockClass": "logoGasd",
       "title": "Logo",
       "href": "/",
       "url": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/efdb19bd-0e3c-4f95-a805-ebbecacebd0b___0aeaf3d65cbbd37505704c762c5e9b4f.svg",
-      "width": "70"
+      "width": "100"
+    }
+  },
+  "flex-layout.col#right": {
+    "children": ["drawer", "minicart.v2"],
+    "props": {
+      "width": "60"
     }
   }
 }

@@ -1,18 +1,18 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#shop"
+      /* "menu-item#about-us" */
     ]
   },
   "menu-item#shop": {
     "props": {
       "id": "menu-item-shop",
-      "type": "custom",
+      "type": "category",
       "iconId": null,
-      "highlight": false,
+      "highlight": true,
       "itemProps": {
-        "type": "internal",
+        "type": "CategoryItem",
         "href": "#",
         "noFollow": false,
         "tagTitle": "Shop",

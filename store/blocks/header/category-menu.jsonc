@@ -17,14 +17,14 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        "href": "/categories",
         "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
+        "tagTitle": "Categorias",
+        "text": "Categorias"
       }
     },
     "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
+      "vtex.menu@2.x:submenu#more"
     ]
   },
   "vtex.menu@2.x:submenu#category-apparel": {
@@ -92,16 +92,17 @@
   },
   "menu-item#category-home": {
     "props": {
+      "blockClass":["item-category"],
       "id": "menu-item-category-home",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/ciber/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Cyber Real Plaza",
+        "text": "Cyber Real Plaza"
       }
     }
   },

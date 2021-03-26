@@ -6,6 +6,8 @@
 
 }
 
-.menuItem .styledLinkContent{
+.styledLinkContent--nav-options--item{
   color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 }

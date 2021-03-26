@@ -8,6 +8,17 @@
 
 .styledLinkContent--nav-options--item{
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 16px;
   text-transform: uppercase;
+  line-height: 12px;
+  letter-spacing: 0.7px;
+  padding: 10px 0;
+  border-bottom: 3px solid transparent;
+}
+.styledLinkContent--nav-options--item:hover{
+  border-bottom: 3px solid #fff;
+}
+.styledLinkContainer--nav-options--item{
+  margin: 0 0.8rem;
 }

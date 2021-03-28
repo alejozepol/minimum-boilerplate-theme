@@ -1,4 +1,4 @@
-.flexRowContent--nav-mobile{
+.flexRowContent--nav-mobile {
   background-color: #7300e0;
 }
 
@@ -7,17 +7,15 @@
   height: max-content;
 } */
 
-.flexRowContent--nav-desk{
-/* #6800c9 */
+.flexRowContent--nav-desk {
+  /* #6800c9 */
 }
 
-.flexRowContent--nav-desk--category{
+.flexRowContent--nav-desk--category {
   background-color: #6800c9;
 }
 
-.flexRowContent--nav-desk{
-  justify-content: space-around;
+.flexRowContent--nav-desk {
+  justify-content: space-between;
+  align-items: center;
 }
-/* .flexCol--container-nav-desk--options{
-  flex-direction: row;
-} */

@@ -1,4 +1,11 @@
-/* .logoLink--logoGasd{
-  background-color: aqua;
-} */
+.searchBarInnerContainer--desk{
+  width: 50vw;
+}
+.searchIcon{
+  color: #6800c9;
+}
 
+
+::placeholder{
+  color: #6800c9;
+}

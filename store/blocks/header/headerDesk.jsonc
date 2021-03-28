@@ -30,25 +30,34 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
+      "logo#desktop",
       "search-bar",
       "flex-layout.row#desk-option"
     ]
   },
-  "flex-layout.col#logo-desktop": {
+  "logo#desktop": {
     "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
+      "blockClass":"nav-desk",
+      "title": "Logo",
+      "href": "/",
+      "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png",
+      "width": "250"
+    }
+  },
+  "search-bar": {
+    "props": {
+      "blockClass": "desk",
+      "placeholder": "¿Qué estás buscando?",
+      "iconClasses": "iconSearch"
+    }
   },
   "flex-layout.row#desk-option": {
     "props": {
-      "blockClass":"container-nav-desk--options",
-      "horizontalAlign":"CENTER"
+      "blockClass": "container-nav-desk--options",
+      "horizontalAlign": "CENTER"
     },
     "children": ["login", "minicart.v2"]
   },
-
   "flex-layout.row#3-desktop": {
     "props": {
       "blockClass": "nav-desk--category",
@@ -65,13 +74,5 @@
       "verticalAlign": "middle"
     },
     "children": ["vtex.menu@2.x:menu#nav-desk--menuOption"]
-  },
-  "logo#desktop": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://realplaza.vtexassets.com/arquivos/logo-nuevo-real-plaza.png",
-      "width": "180"
-    }
   }
 }

@@ -1,10 +1,23 @@
-.searchBarInnerContainer--desk{
+.searchBarInnerContainer--desk {
   width: 50vw;
 }
-.searchIcon{
+.searchIcon {
+  color: #6800c9;
+}
+.logoContainer--navLogo {
+  padding: 0%;
+}
+
+::placeholder {
   color: #6800c9;
 }
 
-::placeholder{
-  color: #6800c9;
+@media (max-width: 600px) {
+  .searchBarInnerContainer--desk {
+    width: max-content;
+  }
+  .searchBarContainer{
+    display: flex;
+    justify-content: center;
+  }
 }

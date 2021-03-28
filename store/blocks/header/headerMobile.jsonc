@@ -27,24 +27,26 @@
   "flex-layout.col#left": {
     "children": ["logo#mobile"],
     "props": {
-      "blockClass": ["nav-mobile-children", "nav-mobile-left"]
-     /*  "horizontalAlign":"center" */
+      "blockClass": ["nav-mobile-children", "nav-mobile-left"],
+     "width": "20%",
+     "horizontalAlign": "CENTER",
+     "verticalAlign": "CENTER",
+     "preventVerticalStretch":true
       
     }
   },
   "logo#mobile": {
     "props": {
-      "blockClass": "logoGasd",
+      "blockClass": "navLogo",
       "title": "Logo",
       "href": "/",
       "url": "https://realplaza.vtexassets.com/assets/vtex.file-manager-graphql/images/efdb19bd-0e3c-4f95-a805-ebbecacebd0b___0aeaf3d65cbbd37505704c762c5e9b4f.svg",
-      "width": "100"
+      "width": "60"
     }
   },
   "flex-layout.col#right": {
-    "children": ["drawer", "minicart.v2"],
+    "children": ["search-bar"/* , "minicart.v2" */],
     "props": {
-      "width": "60"
     }
   }
 }

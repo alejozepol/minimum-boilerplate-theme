@@ -214,15 +214,15 @@
   font-style: normal;
   font-weight: 900;
   font-display: auto;
-  src: url(/assets/fonts/la-solid-900.eot);
-  src: url(/assets/fonts/la-solid-900.eot?#iefix)
+  src: url(//db.onlinewebfonts.com/t/d589f568cfa911453cc08bf622833fd2.eot);
+  src: url(//db.onlinewebfonts.com/t/d589f568cfa911453cc08bf622833fd2.eot?#iefix)
       format("embedded-opentype"),
-    url(/assets/fonts/la-solid-900.woff2)
+    url(//db.onlinewebfonts.com/t/d589f568cfa911453cc08bf622833fd2.woff2)
       format("woff2"),
-    url(/assets/fonts/la-solid-900.woff)
+    url(//db.onlinewebfonts.com/t/d589f568cfa911453cc08bf622833fd2.woff)
       format("woff"),
-    url(/assets/fonts/la-solid-900.ttf)
+    url(//db.onlinewebfonts.com/t/d589f568cfa911453cc08bf622833fd2.ttf)
       format("truetype"),
-    url(/assets/fonts/la-solid-900.svg#la-solid-900)
+    url(//db.onlinewebfonts.com/t/d589f568cfa911453cc08bf622833fd2.svg#la-solid-900)
       format("svg");
 }

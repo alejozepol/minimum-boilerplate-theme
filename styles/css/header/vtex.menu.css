@@ -30,3 +30,6 @@
 .styledLinkContainer--nav-options--item{
   margin: 0 0.8rem;
 }
+:global(.vtex-store-drawer-0-x-menuIcon){
+  color: #7300e0;
+}

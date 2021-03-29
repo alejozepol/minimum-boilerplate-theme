@@ -8,13 +8,20 @@
   padding: 0%;
 }
 
+@media (max-width: 600px) {
+  .searchIcon{
+    display: none;
+  }
+}
+
 ::placeholder {
   color: #6800c9;
+  text-align: center;
 }
 
 @media (max-width: 600px) {
   .searchBarInnerContainer--desk {
-    width: max-content;
+    width: 90%;
   }
   .searchBarContainer{
     display: flex;

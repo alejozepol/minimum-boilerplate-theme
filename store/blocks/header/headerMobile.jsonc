@@ -16,7 +16,7 @@
     }
   },
   "flex-layout.row#nav-mobile": {
-    "children": ["flex-layout.col#left", "flex-layout.col#right"],
+    "children": ["flex-layout.col#left", "flex-layout.row#right"],
     "props": {
       "blockClass": "nav-mobile",
       "preventVerticalStretch": true,
@@ -44,9 +44,10 @@
       "width": "60"
     }
   },
-  "flex-layout.col#right": {
-    "children": ["search-bar"/* , "minicart.v2" */],
+  "flex-layout.row#right": {
+    "children": ["drawer", "search-bar", "minicart.v2"],
     "props": {
+      "blockClass": "nav-mobile-options"
     }
   }
 }
